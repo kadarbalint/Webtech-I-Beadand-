@@ -1,0 +1,28 @@
+$(document).ready(() => {
+    getGyartok();
+
+    $("form").on('submit', (e) => {
+        e.preventDefault();
+        let id = $("form").find("select[name='manufacturer']").val();
+
+        $.ajax({
+            url: 'https://webtechcars.herokuapp.com/api/manufacturers/'+id,
+            type: "DELETE",
+            success: () => {
+                getGyartok();
+            }
+        })
+        alert("Az gyártót sikeresen töröltem!");
+
+
+    })
+})
+
+function getGyartok(){
+    $("select").children().remove();
+    $.getJSON("https://webtechcars.herokuapp.com/api/manufacturers", (data) => {
+        $.each(data, (key, value) => {
+            $("select").append("<option value="+value._id+">"+value.name+"</option>");
+        })
+    })
+}

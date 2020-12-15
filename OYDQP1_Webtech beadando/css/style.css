@@ -1,0 +1,118 @@
+html{
+        background-image: url("../images/bmw.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: "Times New Roman", Times, serif;
+
+}
+.formatum{
+    text-align:center;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    box-shadow: 0px 1px 40px 1px white;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-top: 50px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+.menuSor{
+    padding-top:1vh;
+    padding-bottom:1vh;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    display:flex;
+    justify-content: space-between;
+}
+.menuLink{
+    font-size: 30px;
+    color: white;
+    transition: 500ms ease;
+    -webkit-transition: 500ms ease;
+    -moz-transition: 500ms ease;
+}
+
+.menuLink:hover{
+    color:red;
+    transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    -moz-transform: scale(1.1,1.1);
+}
+
+#content{
+    text-align: center;
+}
+
+header{
+    background: rgba(0,0,0,0.6);
+    color: white;
+    box-shadow: 0px 1px 40px 1px white;
+    border-radius: 10px;
+    border: 1px solid white;}
+
+
+.grid-container{
+    
+    padding-top: 1vh;
+    justify-content: space-around;
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-row-gap: 1vh;
+}
+
+.adatlap{
+  
+
+    padding-bottom:10px;
+    min-width: 300px;
+    max-width: 400px;
+    text-align: center;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    box-shadow: 0px 1px 40px 1px white;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.nagySelect{
+    border-radius:15px;
+    width:200px;
+    height:50px;
+}
+.nagySubmit{
+    border-radius:15px;
+    width:200px;
+    height:50px;
+    margin-top:1vh;
+    padding: 10px;
+    cursor:pointer;
+}
+.nagySubmit:hover{
+    background-color:green;
+   
+}
+.nagySubmittorol{
+    border-radius:15px;
+    width:200px;
+    height:50px;
+    margin-top:1vh;
+    padding: 10px;
+    margin-left:5px;
+    cursor:pointer;
+}
+.nagySubmittorol:hover{
+    background-color:red;
+   
+}
+.nagyText{
+    width:200px;
+    height:50px;
+    border-radius: 15px;
+}
+
+input, select{
+    margin-bottom: 1vh;
+}
